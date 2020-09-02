@@ -1,0 +1,7 @@
+email.mailer=SMTPMailer
+smtp.host=smtp.gmail.com
+smtp.port=587
+smtp.username=my.email@gmail.com
+smtp.password=my.password
+smtp.from.email=my.email@gmail.com
+smtp.from.name="MyName"

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "codzo/config": "dev-master"
+    }
+}
