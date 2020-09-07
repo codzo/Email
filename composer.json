@@ -18,11 +18,21 @@
         "phpmailer/phpmailer": "^6.1"
     },
     "require-dev": {
+        "codzo/phpcodesniffer-git-hook":"dev-master",
         "phpunit/phpunit": "^9.3"
     },
     "autoload": {
         "psr-0": {
             "Codzo\\Email": "src/"
         }
+    },
+    "scripts": {
+        "apply-phpcs-hook": "Codzo\\PHPCodeSnifferGitHook\\Installer::applyPHPCSHook",
+        "post-install-cmd": [
+            "@apply-phpcs-hook"
+        ],
+        "post-update-cmd": [
+            "@apply-phpcs-hook"
+        ]
     }
 }
